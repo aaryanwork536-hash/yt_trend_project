@@ -36,7 +36,7 @@ def fetch_live_trending(api_key, region_code="US"):
         print(f"API Connection Failed: {e}. Please ensure your API Key is active and valid.")
 
 if __name__ == "__main__":
-    # Replace 'YOUR_GOOGLE_API_KEY' with your actual generated GCP credential string
+   
     API_KEY = os.getenv("YOUTUBE_API_KEY", "YOUR_GOOGLE_API_KEY")
     if API_KEY != "YOUR_GOOGLE_API_KEY":
         fetch_live_trending(API_KEY, region_code="US")
